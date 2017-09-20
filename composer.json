@@ -1,12 +1,21 @@
 {
   "name": "avtonom/google-api-my-business-php-client",
+  "type": "library",
   "description": "The Google My Business API provides an interface for managing business location information on Google for PHP",
   "keywords": ["google-api", "google", "api", "my-business", "mybusiness", "api-mybusiness", "google-api-my-business", "google-api-mybusiness"],
   "homepage": "https://github.com/Avtonom/google-api-my-business-php-client",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "require": {
     "php": ">=5.4.0",
     "google/apiclient": "^2.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Google_": "src/"
+    },
+    "classmap": [
+      "src/Google/Service/"
+    ]
   },
   "extra": {
     "branch-alias": {
