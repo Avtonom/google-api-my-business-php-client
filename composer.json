@@ -10,12 +10,7 @@
     "google/apiclient": "^2.0"
   },
   "autoload": {
-    "psr-0": {
-      "Google_": "src/"
-    },
-    "classmap": [
-      "src/Google/Service/"
-    ]
+    "files": ["MyBusiness.php"]
   },
   "extra": {
     "branch-alias": {
